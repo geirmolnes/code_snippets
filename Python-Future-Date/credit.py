@@ -18,9 +18,7 @@ while balance > 0:
     balance -= monthly_payment
 
     balance = round(balance, 2)
-    if balance < 0:
-        balance = 0
-
+    balance = max(balance, 0)
     print(end_date, balance)
 
     days_in_current_month = calendar.monthrange(end_date.year, end_date.month)[1]
