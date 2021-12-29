@@ -29,7 +29,7 @@ while True:
         print(x_value, total_1, total_2)
 
         x_value += 1
-        total_1 = total_1 + random.randint(-6, 8)
-        total_2 = total_2 + random.randint(-5, 6)
+        total_1 += random.randint(-6, 8)
+        total_2 += random.randint(-5, 6)
 
     time.sleep(1)

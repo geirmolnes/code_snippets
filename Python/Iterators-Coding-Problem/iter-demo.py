@@ -18,8 +18,7 @@ class Sentence:
 
 
 def sentence(sentence):
-    for word in sentence.split():
-        yield word
+    yield from sentence.split()
 
 
 my_sentence = sentence('This is a test')
